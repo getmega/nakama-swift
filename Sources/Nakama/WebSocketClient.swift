@@ -107,7 +107,7 @@ public class WebSocketClient : SocketClient {
         components.path = "/ws"
         components.queryItems = [
             URLQueryItem(name: "token", value: session.token),
-            //URLQueryItem(name: "format", value: "protobuf"),
+            URLQueryItem(name: "format", value: "protobuf"),
         ]
         
         if createStatus != nil {
